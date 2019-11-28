@@ -3,6 +3,7 @@ package com.saanvi.mongo.connector_api;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 /**
@@ -11,6 +12,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
  */
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.saanvi.mongo"})
+@Configuration
 @EnableMongoRepositories(basePackages = "com.saanvi.mongo.repository")
 public class App 
 {
